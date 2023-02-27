@@ -12,8 +12,18 @@
     let root = document.getElementById("root");
     console.log(root);
     let weekend = ["월요일 오늘", "수요일 쉼", "금요일 놀자"];
+    
+    //매개변수가 들어올 경우, 변수에 1을 더하는 함수.
+    function increase(value) {
+      value = value + 1;
+      console.log(value);
+    }
 
-    root.innerHTML = weekend[2]; //배열의 경우 index의 수만 변경하면 안의 값을 쉽게 가져올 수 있다.
+    let counter = 0;
+    
+    root.addEventListener('click', increase(counter));
+    console.log(counter);
+    root.innerHTML = weekend[2];
   </script>
 </body>
 </html>
