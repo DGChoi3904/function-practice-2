@@ -21,7 +21,11 @@
 
     let counter = 0;
     
-    root.addEventListener('click', increase(counter));
+    //이벤트 리스너로 클릭을 캐치했을 경우, function()를 실행하게 함. 내용은 위의 increase와 같음
+    root.addEventListener('click', function(){
+      counter = counter + 1;
+      increase(counter);
+    });
     console.log(counter);
     root.innerHTML = weekend[2];
   </script>
