@@ -11,7 +11,9 @@
   <script>
     let root = document.querySelector("root");
     console.dir(root);
-    root.children[0] = "hello";
+    //ul이라는 태그요소를 생성하고 이를 ul이라는 변수의 값으로 설정.
+    let ul = document.createElement('ul');
+    root.appendChild(ul); //append, 덧붙인다.
   </script>
 </body>
 </html>
