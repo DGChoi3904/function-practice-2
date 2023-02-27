@@ -11,8 +11,9 @@
   <script>
     let root = document.getElementById("root");
     console.log(root);
-    let mainText = "<h1>수요일은 쉽니다.</h1>"
-    root.innerHTML = mainText;
+    let weekend = ["월요일 오늘", "수요일 쉼", "금요일 놀자"];
+
+    root.innerHTML = weekend[2]; //배열의 경우 index의 수만 변경하면 안의 값을 쉽게 가져올 수 있다.
   </script>
 </body>
 </html>
