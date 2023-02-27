@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    /* CSS에서 스타일을 적용할 경우, 스크립트에서 적용되면 무시당한다. */
     #root {
       width : 100px;
       height : 100px;
@@ -18,6 +19,7 @@
   <script>
     let root = document.getElementById("root");
     console.dir(root);
+    // 스크립트 안에서 스타일을 적용할 경우, CSS는 무시된다.
     root.style.backgroundColor = "#999";
     root.style.width = "200px";
   </script>
