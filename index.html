@@ -5,6 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    #root {
+      width : 100px;
+      height : 100px;
+      background-color : lightblue;
+    }
+  </style>
 </head>
 <body>
   <div id="root"></div>
@@ -23,11 +30,11 @@
     
     //이벤트 리스너로 클릭을 캐치했을 경우, function()를 실행하게 함. 내용은 위의 increase와 같음
     root.addEventListener('click', function(){
+      root.innerHTML = weekend[counter];
       counter = counter + 1;
-      increase(counter);
     });
     console.log(counter);
-    root.innerHTML = weekend[2];
+    
   </script>
 </body>
 </html>
